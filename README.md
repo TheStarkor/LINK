@@ -3,13 +3,30 @@ Link IN Knowledge
 
 ## Getting Started
 
-Run webpack dev server
+Strat front server
 ```
+$ cd front
 $ npm install
 $ npm run dev
 ```
 
+## Directory
+
+```
+LINK
+├── back
+├── front
+│   ├── components  // React Components
+│   ├── pages       // The root of a Next.js application
+│   ├── reducers
+│   └── sagas
+├── LICENSE
+└── README.md
+```
+
 ## Git Commit Message Style
+
+We follows https://udacity.github.io/git-styleguide/
 
 ```
 feat: a new feature
@@ -20,5 +37,3 @@ refactor: refactoring production code
 test: adding tests, refactoring test; no production code change
 chore: updating build tasks, package manager configs
 ```
-
-https://udacity.github.io/git-styleguide/
