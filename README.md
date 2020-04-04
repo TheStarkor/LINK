@@ -9,6 +9,12 @@ $ cd front
 $ npm install
 $ npm run dev
 ```
+##Styling
+Sass, Scss
+```
+yarn add node-sass
+yarn add classnames
+```
 
 ## Directory
 
