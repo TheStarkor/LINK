@@ -9,11 +9,14 @@ $ cd front
 $ npm install
 $ npm run dev
 ```
-##Styling
+## Styling
+
 Sass, Scss
+
 ```
 yarn add node-sass
 yarn add classnames
+
 ```
 
 ## Directory
