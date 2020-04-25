@@ -10,10 +10,19 @@ import UserProfile from './UserProfile';
 
 const AppLayout = ({ children }) => {
   const { me } = useSelector(state => state.user);
+  const data = {
+    id: 123,
+    test: 'helloo'
+  }
 
   axios.get("http://127.0.0.1:8000/api/")
   .then(response => {
-    console.log(response.data)
+    console.log('===> GET test : ', response.data)
+  })
+
+  axios.post("http://127.0.0.1:8000/api/", data)
+  .then(response => {
+    console.log('===> POST test: ', response.data)
   })
 
   return (
