@@ -3,27 +3,39 @@ Link IN Knowledge
 
 ## Getting Started
 
-Strat front server
+### Start Front Server  
+- Environment: Node.js 10.16 (npm)
 ```
 $ cd front
 $ npm install
 $ npm run dev
 ```
-## Styling
 
-Sass, Scss
-
+### Start Django Back Server  
+- Environment: Python 3.7 (virtualenv)
 ```
-yarn add node-sass
-yarn add classnames
-
+$ cd back_django
+$ virtualenv <env name>
+$ source <env name>/Scripts/activate
+$ pip install -r requirement.txt
+$ python manage.py migrate
+$ python manage.py runserver
 ```
+
+## Built with
+- React.js
+  - Next.js
+  - Redux
+  - Redux-Saga
+  - Sass, SCSS
+- Django
 
 ## Directory
 
 ```
 LINK
 ├── back
+├── back_django     // django api test server
 ├── front
 │   ├── components  // React Components
 │   ├── pages       // The root of a Next.js application
