@@ -1,7 +1,7 @@
 # LINK
 Link IN Knowledge
 
-## Documentation
+### Documentation
 Documentation for the DB, API, and Web is available on the [Github Wiki](https://github.com/TheStarkor/LINK/wiki)
 
 ## Getting Started
