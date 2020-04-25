@@ -3,27 +3,12 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Menu, Input, Row, Col } from 'antd';
 import { useSelector } from 'react-redux';
-import LoginForm from './LoginForm';
-import axios from 'axios';
 
+import LoginForm from './LoginForm';
 import UserProfile from './UserProfile';
 
 const AppLayout = ({ children }) => {
   const { me } = useSelector(state => state.user);
-  const data = {
-    id: 123,
-    test: 'helloo'
-  }
-
-  axios.get("http://127.0.0.1:8000/api/")
-  .then(response => {
-    console.log('===> GET test : ', response.data)
-  })
-
-  axios.post("http://127.0.0.1:8000/api/", data)
-  .then(response => {
-    console.log('===> POST test: ', response.data)
-  })
 
   return (
     <div>
