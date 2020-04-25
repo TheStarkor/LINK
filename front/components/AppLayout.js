@@ -4,10 +4,18 @@ import PropTypes from 'prop-types';
 import { Menu, Input, Row, Col } from 'antd';
 import { useSelector } from 'react-redux';
 import LoginForm from './LoginForm';
+import axios from 'axios';
+
 import UserProfile from './UserProfile';
 
 const AppLayout = ({ children }) => {
   const { me } = useSelector(state => state.user);
+
+  axios.get("http://127.0.0.1:8000/api/")
+  .then(response => {
+    console.log(response.data)
+  })
+
   return (
     <div>
       <Menu mode="horizontal">

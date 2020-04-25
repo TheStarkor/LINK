@@ -33,5 +33,10 @@
   "devDependencies": {
     "nodemon": "^2.0.2",
     "webpack": "^4.42.0"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:8000"
+    }
   }
 }
