@@ -4,7 +4,7 @@ Link IN Knowledge
 ## Getting Started
 
 ### Start Front Server  
-- Environment: Node.js 10.16 (npm)
+- Environment: [Node.js 10.15](https://nodejs.org/en/) (npm)
 ```
 $ cd front
 $ npm install
@@ -12,7 +12,7 @@ $ npm run dev
 ```
 
 ### Start Django Back Server  
-- Environment: Python 3.7 (virtualenv)
+- Environment: [Python 3.7](https://www.python.org/) (virtualenv)
 ```
 $ cd back_django
 $ virtualenv <env name>
@@ -23,12 +23,12 @@ $ python manage.py runserver
 ```
 
 ## Built with
-- React.js
-  - Next.js
-  - Redux
-  - Redux-Saga
-  - Sass, SCSS
-- Django
+- [React.js](https://reactjs.org/)
+  - [Next.js](https://nextjs.org/)
+  - [Redux](https://redux.js.org/)
+  - [Redux-Saga](https://redux-saga.js.org/)
+  - [Sass, SCSS](https://sass-lang.com/)
+- [Django](https://www.djangoproject.com/)
 
 ## Directory
 
