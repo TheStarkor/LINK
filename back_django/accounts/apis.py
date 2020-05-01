@@ -5,20 +5,20 @@ from rest_framework.response import Response
 
 from accounts.models import User
 from accounts.serializers import (
-    UserSerializer,
-    RegisterSerializer,
+    UserListSerializer,
     LoginSerializer,
+    SignupSerializer,
+    FindAccountSerializer,
     PasswordResetSerializer,
-    FindSerializer,
 )
 
 
 # TODO : Token 처리
 
 
-class UserAPI(ListAPIView):
+class UserListAPI(ListAPIView):
     queryset = User.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = UserListSerializer
 
 
 class LoginAPI(CreateAPIView):
@@ -26,11 +26,11 @@ class LoginAPI(CreateAPIView):
 
 
 class SignupAPI(CreateAPIView):
-    serializer_class = RegisterSerializer
+    serializer_class = SignupSerializer
 
 
 class FindAccountAPI(CreateAPIView):
-    serializer_class = FindSerializer
+    serializer_class = FindAccountSerializer
 
 
 class PasswordResetAPI(UpdateAPIView):
