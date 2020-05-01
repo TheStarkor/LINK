@@ -1,4 +1,5 @@
 # LINK
+
 Link IN Knowledge
 
 ### Documentation
@@ -6,24 +7,28 @@ Documentation for the DB, API, and Web is available on the [Gitbook](https://sk-
 
 ## Getting Started
 
-### Start Front Server  
-- Environment: [Node.js 10.15](https://nodejs.org/en/) (npm)
-```
-$ cd front
-$ npm install
-$ npm run dev
-```
+### Start Front Server
 
-### Start Django Back Server  
-- Environment: [Python 3.7](https://www.python.org/) (virtualenv)
-```
-$ cd back_django
-$ virtualenv <env name>
-$ source <env name>/Scripts/activate
-$ pip install -r requirement.txt
-$ python manage.py migrate
-$ python manage.py runserver
-```
+* Environment: [Node.js 10.15](https://nodejs.org/en/) \(npm\)
+
+  ```text
+  $ cd front
+  $ npm install
+  $ npm run dev
+  ```
+
+### Start Django Back Server
+
+* Environment: [Python 3.7](https://www.python.org/) \(virtualenv\)
+
+  ```text
+  $ cd back_django
+  $ virtualenv <env name>
+  $ source <env name>/Scripts/activate
+  $ pip install -r requirement.txt
+  $ python manage.py migrate
+  $ python manage.py runserver
+  ```
 
 ## Built with
 - [React.js](https://reactjs.org/)
@@ -37,7 +42,7 @@ $ python manage.py runserver
 
 ## Directory
 
-```
+```text
 LINK
 ├── back
 ├── back_django     // django api test server
@@ -52,9 +57,9 @@ LINK
 
 ## Git Commit Message Style
 
-We follows https://udacity.github.io/git-styleguide/
+We follows [https://udacity.github.io/git-styleguide/](https://udacity.github.io/git-styleguide/)
 
-```
+```text
 feat: a new feature
 fix: a bug fix
 docs: changes to documentation
@@ -63,3 +68,4 @@ refactor: refactoring production code
 test: adding tests, refactoring test; no production code change
 chore: updating build tasks, package manager configs
 ```
+
