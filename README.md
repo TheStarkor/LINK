@@ -4,7 +4,7 @@ Link IN Knowledge
 
 ### Documentation
 
-Documentation for the DB, API, and Web is available on the \[Gitbook\]\([https://sk-and-mc.gitbook.io/link/](https://sk-and-mc.gitbook.io/link/)\)
+Documentation for the DB, API, and Web is available on the [Gitbook](https://sk-and-mc.gitbook.io/link/)
 
 ## Getting Started
 
