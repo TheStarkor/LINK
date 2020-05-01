@@ -3,6 +3,7 @@
 Link IN Knowledge
 
 ### Documentation
+
 Documentation for the DB, API, and Web is available on the [Gitbook](https://sk-and-mc.gitbook.io/link/)
 
 ## Getting Started
@@ -31,14 +32,15 @@ Documentation for the DB, API, and Web is available on the [Gitbook](https://sk-
   ```
 
 ## Built with
-- [React.js](https://reactjs.org/)
-  - [Next.js](https://nextjs.org/)
-  - [Redux](https://redux.js.org/)
-  - [Redux-Saga](https://redux-saga.js.org/)
-  - [Sass, SCSS](https://sass-lang.com/)
-- [Django](https://www.djangoproject.com/)
-  - [Django REST framework](https://www.django-rest-framework.org/)
-  - [Black](https://github.com/psf/black)
+
+* [React.js](https://reactjs.org/)
+  * [Next.js](https://nextjs.org/)
+  * [Redux](https://redux.js.org/)
+  * [Redux-Saga](https://redux-saga.js.org/)
+  * [Sass, SCSS](https://sass-lang.com/)
+* [Django](https://www.djangoproject.com/)
+  * [Django REST framework](https://www.django-rest-framework.org/)
+  * [Black](https://github.com/psf/black)
 
 ## Directory
 

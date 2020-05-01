@@ -4,7 +4,8 @@
 
 ## React
 
-* [Untitled](react/untitled.md)
+* [Redux](react/untitled.md)
+* [Redux-Saga](react/redux-saga.md)
 
 ## Django
 
@@ -13,5 +14,11 @@
 
 ## Readings <a id="redings"></a>
 
-* [Web](redings/web.md)
+* [Web](redings/web/README.md)
+  * [REST API](redings/web/rest-api.md)
+  * [MVC](redings/web/mvc.md)
+* [Cooperation Tools](redings/cooperation-tools/README.md)
+  * [Github](redings/cooperation-tools/github.md)
+  * [JavaScript](redings/cooperation-tools/javascript.md)
+  * [Python](redings/cooperation-tools/python.md)
 
