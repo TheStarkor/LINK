@@ -15,7 +15,7 @@ $ pip freeze > requirement.txt     # 패키지 목록 저장
 $ pip install -r requirement.txt   # 패키지 목록 설
 ```
 
-#### Vscode 실행 시 virtualenv 자동 실
+#### Vscode 실행 시 virtualenv 자동 실행 
 
 ```text
 # .vscode/settings.json
