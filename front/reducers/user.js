@@ -7,17 +7,20 @@ const dummyUser = {
 };
 
 export const initialState = {
-  isLoggedIn: false,     // 로그인 여부
-  isLoggingOut: false,   // 로그아웃 시도중
-  isLoggingIn: false,    // 로그인 시도중
-  logInErrorReason: '',  // 로그인 실패 사유
-  isSignedUp: false,     // 회원가입 성공
-  isSigningUp: false,    // 회원가입 시도중
+  isLoggingOut: false, // 로그아웃 시도중
+  isLoggingIn: false, // 로그인 시도중
+  logInErrorReason: '', // 로그인 실패 사유
+  isSignedUp: false, // 회원가입 성공
+  isSigningUp: false, // 회원가입 시도중
   signUpErrorReason: '', // 회원가입 실패 사유
-  me: null,              // 내 정보
-  followingList: [],     // 팔로잉 리스트
-  followerList: [],      // 팔로워 리스트
-  userInfo: null,        // 남의 정보
+  me: null, // 내 정보
+  followingList: [], // 팔로잉 리스트
+  followerList: [], // 팔로워 리스트
+  userInfo: null, // 남의 정보
+  isEditingNickname: false, // 이름 변경 중
+  editNicknameErrorReason: '', // 이름 변경 실패 사유
+  hasMoreFollower: false,
+  hasMoreFollowing: false,
 };
 
 export const SIGN_UP_REQUEST = 'SIGN_UP_REQUEST';
