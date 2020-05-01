@@ -60,7 +60,7 @@ Login
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="username" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -68,7 +68,7 @@ Login
 {% api-method-parameter name="password" type="string" required=true %}
 
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
