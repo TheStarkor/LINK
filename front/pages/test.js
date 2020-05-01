@@ -7,7 +7,7 @@ const Test = () => {
     title: "title test",
     author: "bsh",
     pw: "hello1234",
-    content: "Test Test Test"
+    content: "Test Test Test",
   }
 
   const dummyUser1 = {
@@ -17,7 +17,8 @@ const Test = () => {
     dept_major: "cs",
     username: "hoho",
     reputation: "repurepu",
-    password: "1234abc"
+    password: "1234abc",
+    portal_id: "aaa",
   }
   const dummyUser2 = {
     email: "adwdaw@dw.com",
@@ -26,11 +27,16 @@ const Test = () => {
     dept_major: "css",
     username: "gglgg",
     reputation: "repurdadawu",
-    password: "1sdwdwdc"
+    password: "1sdwdwdc",
+    portal_id: "bbb",
   }
   const dummyfind = {
-    portal_id: "abcd",
-    password: "1234abc"
+    portal_id: "aaa",
+    portal_pw: "1234abc",
+  }
+  const dummylogin = {
+    username: "hoho",
+    password: "1",
   }
 
   const getTest = async () => {
@@ -43,21 +49,21 @@ const Test = () => {
     console.log('===> POST test: ', response.data)
   }
 
-  const registerTest1 = async () => {
-    const response = await axios.post("http://127.0.0.1:8000/accounts/api/register", 
+  const signupTest1 = async () => {
+    const response = await axios.post("http://127.0.0.1:8000/accounts/api/signup", 
                                       dummyUser1)
-    console.log('===> Register test: ', response.data)
+    console.log('===> Signup test: ', response.data)
   }
 
-  const registerTest2 = async () => {
-    const response = await axios.post("http://127.0.0.1:8000/accounts/api/register", 
+  const signupTest2 = async () => {
+    const response = await axios.post("http://127.0.0.1:8000/accounts/api/signup", 
                                       dummyUser2)
-    console.log('===> Register test: ', response.data)
+    console.log('===> Signup test: ', response.data)
   }
 
   const loginTest = async () => {
     const response = await axios.post("http://127.0.0.1:8000/accounts/api/login",
-                                      dummyUser1)
+                                      dummylogin)
     console.log('===> Login test: ', response.data)                            
   }
 
@@ -67,17 +73,24 @@ const Test = () => {
     console.log('===> Find Account test: ', response.data)      
   }
 
+  const userTest = async () => {
+    const response = await axios.get("http://127.0.0.1:8000/accounts/api/user",
+                                      dummyfind)
+    console.log('===> User test: ', response.data)     
+  }
+
   return (
     <>
       <div>
         <Button onClick={getTest}>GET test</Button>
         <Button onClick={postTest}>POST test</Button>
-        <Button onClick={registerTest1}>Register test 1</Button>
-        <Button onClick={registerTest2}>Register test 2</Button>
+        <Button onClick={signupTest1}>Register test 1</Button>
+        <Button onClick={signupTest2}>Register test 2</Button>
       </div>
       <div>
         <Button onClick={loginTest}>Login test</Button>
         <Button onClick={findaccountTest}>Find Account test</Button>
+        <Button onClick={userTest}>User List test</Button>
       </div>
     </>
   )

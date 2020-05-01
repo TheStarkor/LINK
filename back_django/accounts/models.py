@@ -1,9 +1,10 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password, check_password
 
 
 class User(models.Model):
     email = models.EmailField(max_length=255, unique=True,)
-    portal_id = models.CharField(max_length=10, unique=True, null=True,)
+    portal_id = models.CharField(max_length=10, unique=True)
     name = models.CharField(max_length=30, null=True,)
     dept_major = models.CharField(max_length=50, null=True,)
     username = models.SlugField(max_length=30, null=True, unique=True,)
@@ -19,6 +20,12 @@ class User(models.Model):
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELD = []
+
+    def set_password(self, password):
+        self.password = make_password(password)
+
+    def check_password(self, password):
+        return check_password(password, self.password)
 
     def __str__(self):
         return self.email
