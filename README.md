@@ -2,7 +2,7 @@
 Link IN Knowledge
 
 ### Documentation
-Documentation for the DB, API, and Web is available on the [Github Wiki](https://github.com/TheStarkor/LINK/wiki)
+Documentation for the DB, API, and Web is available on the [Gitbook](https://sk-and-mc.gitbook.io/link/)
 
 ## Getting Started
 
@@ -32,6 +32,8 @@ $ python manage.py runserver
   - [Redux-Saga](https://redux-saga.js.org/)
   - [Sass, SCSS](https://sass-lang.com/)
 - [Django](https://www.djangoproject.com/)
+  - [Django REST framework](https://www.django-rest-framework.org/)
+  - [Black](https://github.com/psf/black)
 
 ## Directory
 
