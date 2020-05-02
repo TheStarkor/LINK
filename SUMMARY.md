@@ -2,23 +2,15 @@
 
 * [LINK](README.md)
 
-## React
+## Front
 
-* [Redux](react/untitled.md)
-* [Redux-Saga](react/redux-saga.md)
+* [Components](front/untitled.md)
 
-## Django
+## Back
 
-* [APIs](django/apis/README.md)
-  * [Accounts](django/apis/accounts.md)
+* [APIs](back/apis/README.md)
+  * [Accounts](back/apis/accounts.md)
+* [DataBase](back/database.md)
 
 ## Readings <a id="redings"></a>
-
-* [Web](redings/web/README.md)
-  * [REST API](redings/web/rest-api.md)
-  * [MVC](redings/web/mvc.md)
-* [Cooperation Tools](redings/cooperation-tools/README.md)
-  * [Github](redings/cooperation-tools/github.md)
-  * [JavaScript](redings/cooperation-tools/javascript.md)
-  * [Python](redings/cooperation-tools/python.md)
 
